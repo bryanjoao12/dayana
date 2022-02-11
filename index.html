@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dayana Cedeño</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <h2 class="logo-text">Dayana Cedeño</h2>
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#">Sobre mi</a></li>
+              <li><a href="#">Lugares Turisticos</a></li>
+              <li><a href="#">Galería</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+          <img
+          src="images/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Sobre mi</h1>
+            <p>
+              Soy Dayana Cedeño Nací el 14/10/2004 Mis Padres soy Cinthya Jaén
+              Méndez Nací en Esmeraldas
+            </p>
+            <br />
+            <a href="#" class="btn">Descubre más</a>
+          </div>
+          <div class="col-2">
+            <img src="images/banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categorías -->
+
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/category-1.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-2.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End categorías -->
+
+    <!----- Featurd Products--------->
+    <div class="small-container">
+      <h2 class="title">Lugares Turisticos</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="#"> <img src="images/paisaje1.jpg" alt="" /></a>
+          <h4>Laguna de Laguna de Yahuarcocha</h4>
+          <p>
+            Esta laguna está rodeada de lomas y miradores naturales que se
+            suspenden hacia el costado sur-occidente.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="images/paisaje2.jpg" alt="" />
+          <h4>Baños de Ambato</h4>
+          <p>
+            Es un centro turístico de importancia del país, también se le conoce
+            como: "El Pedacito de Cielo", "La Puerta de El Dorado" o "Ciudad del
+            Volcán".
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="images/paisaje3.jpg" alt="" />
+          <h4>Montañita</h4>
+          <p>
+            Montañita toma su nombre por estar ubicada en una ensenada rodeada
+            por cerros y vegetación al pie del mar, como un valle con una playa
+            extensa
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="images/paisaje4.jpg" alt="" />
+          <h4>Atacames</h4>
+          <p>
+            Es famosa en todo el Ecuador por poseer una de las playas más
+            grandes del Ecuador y una de las más cercanas a Quito
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+     <div class="small-container">
+       <h2 class="title">Galería</title>
+
+     </div>
+
+     <!-- Carrusel -->
+ 
+     <div class="Carousel">
+     
+      <div class="slick-list" id="slick-list">
+          <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+          </button>
+          <div class="slick-track" id="track">
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/1.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/2.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                       
+                          <picture>
+                              <img src="./images/3.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                        
+                          <picture>
+                              <img src="./images/4.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                         
+                          <picture>
+                              <img src="./images/5.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/6.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/7.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                        
+                          <picture>
+                              <img src="./images/8.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                        
+                          <picture>
+                              <img src="./images/9.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                     
+                          <picture>
+                              <img src="./images/10.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/11.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                        
+                          <picture>
+                              <img src="./images/12.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                       
+                          <picture>
+                              <img src="./images/13.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                          
+                          <picture>
+                              <img src="./images/14.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+              <div class="slick">
+                  <div>
+                      <a href="/">
+                       
+                          <picture>
+                              <img src="./images/15.jpg" alt="Image">
+                          </picture>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+          </button>
+      </div>
+
+      
+      
+  </div>
+  
+  
+  <script defer src="main.js"></script>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  </body>
+</html>
